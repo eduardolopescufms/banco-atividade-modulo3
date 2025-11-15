@@ -1,0 +1,11 @@
+Tabela produtos:
+   id_produto (INTEGER, chave primária)
+   nome (VARCHAR)
+   preco (DECIMAL)
+   estoque (INTEGER)
+
+Tabela pedidos:
+   id_pedido (INTEGER, chave primária)
+   data (DATE)
+   id_produto (INTEGER, chave estrangeira referenciando produtos)
+   quantidade (INTEGER)
