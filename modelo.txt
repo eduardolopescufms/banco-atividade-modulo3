@@ -9,3 +9,4 @@ Tabela pedidos:
    data (DATE)
    id_produto (INTEGER, chave estrangeira referenciando produtos)
    quantidade (INTEGER)
+   cliente (VARCHAR)

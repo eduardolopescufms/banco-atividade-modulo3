@@ -1,4 +1,4 @@
--- Estrutura inicial do banco de dados (v1)
+-- Estrutura do banco de dados após alteração (v2)
 CREATE TABLE produtos (
     id_produto INTEGER PRIMARY KEY,
     nome VARCHAR(100),
@@ -11,6 +11,6 @@ CREATE TABLE pedidos (
     data DATE,
     id_produto INTEGER,
     quantidade INTEGER,
+    cliente VARCHAR(100),
     FOREIGN KEY (id_produto) REFERENCES produtos(id_produto)
 );
-
